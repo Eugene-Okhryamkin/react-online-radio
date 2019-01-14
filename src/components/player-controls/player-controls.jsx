@@ -1,36 +1,39 @@
 import React, { Component } from "react";
+import PlayPause from "./play-pause/playPause.jsx";
+import VolumeMute from "./volume-mute/volumeMute.jsx";
 import "./player-controls.sass";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Controls extends Component {
-    state = {
-        audio: false
-    };
-
-    tooglePlayPause = (e) => {
-        e.preventDefault();
-        this.setState({
-            audio: true
-        });
+    constructor(props) {
+        super(props);
+        this.state = {
+            music: null
+        }
     }
 
-    renderAudio = () => {
-      const stream = new Audio();
-      const { audio } = this.state;
-      
-      audio == true ? stream.play() : stream.pause();
+    componentDidMount() {
+        const { stream } = this.props;
+        window.audio = new Audio(stream);
+        this.setState({music: audio});
     }
 
     render() {
-        {this.renderAudio()}
+        const { volume, muted } = this.state;
+
         return(
             <div className="controls">
-                <div className="playPause">
-                    <a
-                        href="#"
-                        onClick={this.tooglePlayPause}
-                    >play</a>
+                <div className="playPause-control__stationName">
+                    <PlayPause music={ this.state.music }/>
+                    <div className="stationName">
+                        <p>{this.props.stationName}</p>
+                    </div>
+                </div>
+                <div className="volume__equalizerBtn">
+                    <VolumeMute music={ this.state.music }/>
                 </div>
             </div>
+
         )
     }
 }
