@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Article from "./Article.jsx";
+import Article from "./Article/Article.jsx";
 
 class Stations extends Component {
 
@@ -9,7 +9,7 @@ class Stations extends Component {
 
         if (data.length) {
             template = data.map((item, index) => {
-                return <Article key={index} item={item} update={() => updateData(item)}/>
+                return <Article key={index} item={item} update={() => updateData(item)} />
             });
         };
 

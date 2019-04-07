@@ -7,7 +7,7 @@ class PlayPause extends Component {
 
     state = {
         play: false
-    };
+    }
 
     tooglePlayPause = e => {
         const { music } = this.props;

@@ -31,12 +31,18 @@ module.exports = {
                         loader: "sass-loader", // compiles Sass to CSS
                     }
                 ]
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader'
+                ]
             }
         ]
     },
     devServer: {
         hot: true,
         overlay: true,
-        port: 5000
+        port: 3600
     }
 };

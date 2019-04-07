@@ -30,7 +30,6 @@ class Controls extends Component {
     componentWillReceiveProps(nextProps) {
         if (nextProps.stream !== this.props.stream) {
             audio.src = nextProps.stream;
-
             this.setState({
                 music: audio
             });
@@ -65,5 +64,5 @@ class Controls extends Component {
         )
     }
 }
-// http://radio.mfm.ua:80/online128
+
 export default Controls;

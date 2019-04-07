@@ -26,7 +26,6 @@ class App extends Component {
                         stations: response,
                         isLoading: false
                     });
-                    console.log(response);
                 }, 1000);
             })
     };
