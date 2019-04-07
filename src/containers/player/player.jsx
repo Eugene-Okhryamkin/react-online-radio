@@ -5,13 +5,14 @@ import Controls from "../../components/player-controls/player-controls.jsx"
 
 class Player extends Component {
 
-
     render() {
+        const { changedStation } = this.props;
+
         return(
             <div className="player">
                 <Controls
-                    stream="http://ic7.101.ru:8000/a100?userid=0&setst=67ligu7ktiebnsvqk2b6926bei"
-                    stationName="авто радио"
+                    stream = {changedStation !== null ? changedStation.URL : ""}
+                    stationName={changedStation == null ? "" : changedStation.stationName}
                 />
             </div>
         )

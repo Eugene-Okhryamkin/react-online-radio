@@ -4,16 +4,15 @@ import "./playPause.sass";
 import { faPauseCircle, faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 
 class PlayPause extends Component {
-    constructor() {
-        super();
-        this.state = {
-            play: false
-        }
-    }
+
+    state = {
+        play: false
+    };
 
     tooglePlayPause = e => {
         const { music } = this.props;
-         e.preventDefault();
+        e.preventDefault();
+
         if(this.state.play) {
             this.setState({play: false});
             music.pause();

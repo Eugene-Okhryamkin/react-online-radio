@@ -2,6 +2,11 @@
   {
     "stationName": "Авторадио",
     "URL": "http://ic7.101.ru:8000/a100?userid=0&setst=67ligu7ktiebnsvqk2b6926bei",
-    "stationImg": ""
+    "stationImg": "./img/autoradio.png"
+  },
+  {
+    "stationName": "Какое-то радио",
+    "URL": "http://ic7.101.ru:8000/a100?userid=0&setst=67ligu7ktiebnsvqk2b6926bei",
+    "stationImg": "./img/autoradio.png"
   }
 ]

@@ -28,7 +28,8 @@
     "normalize.css": "^8.0.1",
     "style-loader": "^0.23.1",
     "webpack": "^4.28.3",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-dev-server": "^3.1.14",
+    "yarn": "^1.15.2"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.12",

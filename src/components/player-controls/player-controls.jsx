@@ -5,13 +5,11 @@ import Equalizer from "../../components/player-controls/Equalizer/Equalizer.jsx"
 import "./player-controls.sass";
 
 class Controls extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            music: null,
-            EQisShowed: "none"
-        }
-    }
+
+    state = {
+        music: null,
+        EQisShowed: "none"
+    };
 
     toogleEq = e => {
         e.preventDefault();
@@ -22,11 +20,22 @@ class Controls extends Component {
         }
     };
 
+
     componentDidMount() {
         const { stream } = this.props;
         window.audio = new Audio(stream);
         this.setState({music: audio});
     };
+
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.stream !== this.props.stream) {
+            audio.src = nextProps.stream;
+
+            this.setState({
+                music: audio
+            });
+        }
+    }
 
     render() {
         const { EQisShowed } = this.state;

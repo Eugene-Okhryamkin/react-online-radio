@@ -4,13 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeDown, faVolumeMute, faVolumeOff, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 
 class VolumeMute extends Component {
-    constructor() {
-        super();
-        this.state = {
-            volume: 0.5,
-            muted: true
-        };
-    }
+
+      state = {
+          volume: 0.5,
+          muted: true
+      };
 
     handleChangeVolume = (event, value) => {
         const { volume } = this.state;
