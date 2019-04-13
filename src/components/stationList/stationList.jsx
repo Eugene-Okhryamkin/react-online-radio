@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import Article from "./Article/Article.jsx";
+import "./stationList.sass";
 
-class Stations extends Component {
-
-    renderStations = () => {
-        const { data, updateData } = this.props;
+const Stations = (props) => {
+    const renderStations = () => {
+        const { data, updateData } = props;
         let template = null;
 
         if (data.length) {
@@ -16,15 +16,15 @@ class Stations extends Component {
         return template;
     };
 
-    render() {
-        return (
-            <div className="stations">
-                {
-                    this.renderStations()
-                }
-            </div>
-        );
-    };
+    return(
+        <div className="stations">
+            {
+                renderStations()
+            }
+        </div>
+    );
 };
+
+
 
 export default Stations;

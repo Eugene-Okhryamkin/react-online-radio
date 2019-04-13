@@ -1,23 +1,12 @@
 import React, { Component } from "react";
 import PlayPause from "./play-pause/playPause.jsx";
 import VolumeMute from "./volume-mute/volumeMute.jsx";
-import Equalizer from "../../components/player-controls/Equalizer/Equalizer.jsx";
 import "./player-controls.sass";
 
 class Controls extends Component {
 
     state = {
         music: null,
-        EQisShowed: "none"
-    };
-
-    toogleEq = e => {
-        e.preventDefault();
-        if(this.state.EQisShowed == "none") {
-            this.setState({EQisShowed: "show"})
-        } else {
-            this.setState({EQisShowed: "none"})
-        }
     };
 
 
@@ -41,7 +30,6 @@ class Controls extends Component {
 
         return(
             <div className="player">
-                <Equalizer showed={EQisShowed} music={ this.state.music }/>
                 <div className="controls">
                     <div className="playPause-control__stationName">
                         <PlayPause music={ this.state.music }/>
@@ -51,11 +39,6 @@ class Controls extends Component {
                     </div>
                     <div className="volume__equalizerBtn">
                         <VolumeMute music={ this.state.music }/>
-                        <a
-                            href="#"
-                            className="EQBtn"
-                            onClick={this.toogleEq}
-                        >eq</a>
                     </div>
                 </div>
             </div>

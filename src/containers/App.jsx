@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Player from "./player/player.jsx";
 import Stations from "./../components/stationList/stationList.jsx";
+import "./App.sass";
+const data = "http://localhost:2200/build/data/data.json";
 
 class App extends Component {
 
@@ -13,7 +15,7 @@ class App extends Component {
     updateData = value => this.setState({changed: value});
 
     componentWillMount() {
-        fetch("./../build/data/data.json")
+        fetch(data)
             .then((response) => {
                 this.setState({
                     isLoading: true
@@ -26,7 +28,7 @@ class App extends Component {
                         stations: response,
                         isLoading: false
                     });
-                }, 1000);
+                }, 5000);
             })
     };
 
@@ -34,8 +36,8 @@ class App extends Component {
         const { stations, isLoading, changed } = this.state;
         return(
             <React.Fragment>
-                <Player changedStation={changed}/>
-                {isLoading && <p>Загружаю...</p>}
+                <Player changedStation={changed} />
+                {isLoading && <div className="preloader" />}
                 {Array.isArray(stations) && <Stations data={stations} updateData={this.updateData}/>}
             </React.Fragment>
         )

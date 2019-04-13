@@ -1,22 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 import "./player.sass";
 import Controls from "../../components/player-controls/player-controls.jsx"
 
 
-class Player extends Component {
+const Player = (props) => {
+    const { changedStation } = props;
 
-    render() {
-        const { changedStation } = this.props;
-
-        return(
-            <div className="player">
-                <Controls
-                    stream = {changedStation !== null ? changedStation.URL : ""}
-                    stationName={changedStation == null ? "" : changedStation.stationName}
-                />
-            </div>
-        )
-    }
-}
+    return(
+        <div className="player">
+            <Controls
+                stream = {changedStation !== null ? changedStation.URL : ""}
+                stationName={changedStation == null ? "" : changedStation.stationName}
+            />
+        </div>
+    )
+};
 
 export default Player;

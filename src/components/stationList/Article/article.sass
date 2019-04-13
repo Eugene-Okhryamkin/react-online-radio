@@ -1,7 +1,44 @@
 .stationItem
   display: flex
+  position: relative
+  justify-content: center
+  align-items: center
   flex-direction: column
   background: #121212
-  width: 30%
-  height: 30%
+  width: 150px
   margin: 1px
+  height: 150px
+  transition: .2s
+
+
+  .img
+
+    img
+      width: 90px
+
+
+  .overlay
+    background: rgba(41, 43, 43, .5)
+    cursor: pointer
+    display: flex
+    opacity: 0
+    transition: .2s
+    width: 150px
+    height: 150px
+    position: absolute
+    justify-content: center
+    align-items: center
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+
+    &:hover
+      opacity: 1
+      &::after
+        position: absolute
+        content: ""
+
+  .fa-play, .fa-pause
+    color: #ffffff
+    font-size: 36px

@@ -13,7 +13,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx$/,
+                test: /\.(jsx|js|json)$/,
                 use: {
                     loader: "babel-loader"
                 }
@@ -43,6 +43,6 @@ module.exports = {
     devServer: {
         hot: true,
         overlay: true,
-        port: 3600
+        port: 2200
     }
 };
