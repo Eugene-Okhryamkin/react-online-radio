@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import Player from "./player/player.jsx";
 import Stations from "./../components/stationList/stationList.jsx";
 import "./App.sass";
-const data = "http://localhost:2200/build/data/data.json";
+import "isomorphic-fetch"
+import Preloader from "./../components/preloader/preloader.jsx"
+const data = "./build/data/data.json";
 
 class App extends Component {
 
@@ -36,8 +38,8 @@ class App extends Component {
         const { stations, isLoading, changed } = this.state;
         return(
             <React.Fragment>
-                <Player changedStation={changed} />
-                {isLoading && <div className="preloader" />}
+                {isLoading && <Preloader />}
+                {!isLoading &&  <Player changedStation={changed} />}
                 {Array.isArray(stations) && <Stations data={stations} updateData={this.updateData}/>}
             </React.Fragment>
         )

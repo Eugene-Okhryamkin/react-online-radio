@@ -43,6 +43,6 @@ module.exports = {
     devServer: {
         hot: true,
         overlay: true,
-        port: 2200
+        port: 3100
     }
 };
