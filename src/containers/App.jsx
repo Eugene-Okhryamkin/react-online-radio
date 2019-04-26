@@ -11,10 +11,12 @@ class App extends Component {
     state = {
         stations: null,
         isLoading: false,
-        changed: null
+        changed: null,
+        played: false
     };
 
-    updateData = value => this.setState({changed: value});
+    updateData = (value) => this.setState({changed: value});
+    playing = (played) => this.setState({played: played});
 
     componentWillMount() {
         fetch(data)
@@ -30,7 +32,7 @@ class App extends Component {
                         stations: response,
                         isLoading: false
                     });
-                }, 5000);
+                }, 1000);
             })
     };
 
@@ -40,7 +42,7 @@ class App extends Component {
             <React.Fragment>
                 {isLoading && <Preloader />}
                 {!isLoading &&  <Player changedStation={changed} />}
-                {Array.isArray(stations) && <Stations data={stations} updateData={this.updateData}/>}
+                {Array.isArray(stations) && <Stations data={stations} updateData={this.updateData} playing={this.playing}/>}
             </React.Fragment>
         )
     }

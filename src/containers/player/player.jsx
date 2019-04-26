@@ -10,7 +10,8 @@ const Player = (props) => {
         <div className="player">
             <Controls
                 stream = {changedStation !== null ? changedStation.URL : ""}
-                stationName={changedStation == null ? "" : changedStation.stationName}
+                stationName={changedStation !== null ? changedStation.stationName : ""}
+                stationImg={changedStation !== null ? changedStation.stationImg : ""}
             />
         </div>
     )

@@ -5,8 +5,8 @@
     "stationImg": "./build/img/autoradio.png"
   },
   {
-    "stationName": "Какое-то радио",
-    "URL": "http://ic7.101.ru:8000/a100?userid=0&setst=67ligu7ktiebnsvqk2b6926bei",
-    "stationImg": "./build/img/autoradio.png"
+    "stationName": "ROCK FM",
+    "URL": "http://nashe1.hostingradio.ru/rock-128.mp3",
+    "stationImg": "./build/img/rock.png"
   }
 ]

@@ -6,7 +6,7 @@ import "./player-controls.sass";
 class Controls extends Component {
 
     state = {
-        music: null,
+        music: null
     };
 
 
@@ -26,13 +26,14 @@ class Controls extends Component {
     }
 
     render() {
-        const { EQisShowed } = this.state;
-
         return(
             <div className="player">
+                <div className="stationImg">
+                    <img src={this.props.stationImg} alt={this.props.stationName}/>
+                </div>
                 <div className="controls">
                     <div className="playPause-control__stationName">
-                        <PlayPause music={ this.state.music }/>
+                        <PlayPause music={ this.state.music } />
                         <div className="stationName">
                             <p>{this.props.stationName}</p>
                         </div>

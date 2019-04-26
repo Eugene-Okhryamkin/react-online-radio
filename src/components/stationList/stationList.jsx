@@ -4,12 +4,12 @@ import "./stationList.sass";
 
 const Stations = (props) => {
     const renderStations = () => {
-        const { data, updateData } = props;
+        const { data, updateData, playing } = props;
         let template = null;
 
         if (data.length) {
             template = data.map((item, index) => {
-                return <Article key={index} item={item} update={() => updateData(item)} />
+                return <Article key={index} item={item} update={()  =>  updateData(item)} played={(isPlayed) => playing(isPlayed)} />
             });
         };
 
