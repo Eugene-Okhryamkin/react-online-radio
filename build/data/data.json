@@ -8,5 +8,16 @@
     "stationName": "ROCK FM",
     "URL": "http://nashe1.hostingradio.ru/rock-128.mp3",
     "stationImg": "./build/img/rock.png"
+  },
+  {
+    "stationName": "Radio Record",
+    "URL": "http://air.radiorecord.ru:8101/rr_320",
+    "stationImg": "./build/img/record.jpg"
+  },
+  {
+    "stationName": "FM Blues",
+    "URL": "http://strm112.1.fm/blues_mobile_aac",
+    "stationImg": "./build/img/blues.png"
   }
+
 ]
