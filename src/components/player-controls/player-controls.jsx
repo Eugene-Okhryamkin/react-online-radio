@@ -9,7 +9,6 @@ class Controls extends Component {
         music: null
     };
 
-
     componentDidMount() {
         const { stream } = this.props;
         window.audio = new Audio(stream);
@@ -17,11 +16,16 @@ class Controls extends Component {
     };
 
     componentWillReceiveProps(nextProps) {
+
         if (nextProps.stream !== this.props.stream) {
             audio.src = nextProps.stream;
+
             this.setState({
                 music: audio
             });
+
+            audio.play();
+
         }
     }
 
@@ -33,7 +37,7 @@ class Controls extends Component {
                 </div>
                 <div className="controls">
                     <div className="playPause-control__stationName">
-                        <PlayPause music={ this.state.music } />
+                        <PlayPause music={ this.state.music }  update={this.props.stream}/>
                         <div className="stationName">
                             <p>{this.props.stationName}</p>
                         </div>
