@@ -6,7 +6,9 @@
   position: fixed
   bottom: 0
   vertical-align: bottom
-  flex: 0 1 auto
+
+  @media screen and (max-width: 800px)
+    justify-content: space-around
 
 .controls
   display: flex
@@ -17,73 +19,46 @@
   align-items: center
   justify-content: space-between
 
+
 .stationImg
   display: flex
   margin-right: 15px
+  border: none
+  outline: none
 
   img
     width: 50px
     height: 45px
 
+  @media screen and (max-width: 800px)
+    display: none
+
 .playPause-control__stationName
   display: flex
   align-items: center
 
+
+  @media screen and (max-width: 800px)
+    width: 100%
+
   .stationName
     margin-left: 20px
+
+
+    @media screen and (max-width: 800px)
+      margin-left: 35%
 
     p
       color: #0a7f08
       text-transform: uppercase
 
 
-.volume__equalizerBtn
-  display: flex
-  align-items: center
 
-  .volume
-    display: flex
-
-  .mute
-    transition: .3s
-    margin:
-      right: 10px
-      left: 10px
-
-  .volumeTrack
-    label
-      color: #0a7f08
-
-    input[type=range]
-      -webkit-appearance: none
-      margin-left: 10px
-      padding: 0
-      height: 8px
-      width: 120px
-      outline: none
-      background: #000
-      border-radius: 10px
-      transition: .3s
-
-      &::-webkit-slider-thumb
-        -webkit-appearance: none
-        cursor: pointer
-        background: #0a7f08
-        height: 10px
-        width: 10px
-        border-radius: 50%
-        margin-top: -1px
-
-      &::-webkit-slider-runnable-track
-        background: #000
-        height: 8px
-        border-radius: 40px
-
-  .EQBtn
-    text-decoration: none
-    text-transform: uppercase
-    color: #000
-    font-weight: bold
+.EQBtn
+  text-decoration: none
+  text-transform: uppercase
+  color: #000
+  font-weight: bold
 
 
 .show

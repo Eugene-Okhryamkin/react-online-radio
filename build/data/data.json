@@ -20,47 +20,45 @@
     "stationImg": "./build/img/blues.png"
   },
   {
+    "stationName": "Europa Plus",
+    "URL": "http://ep256.streamr.ru",
+    "stationImg": "./build/img/europa-plus.png"
+  },
+  {
+    "stationName": "НАШЕ Радио",
+    "URL": "https://nashe1.hostingradio.ru:80/nashe-128.mp3",
+    "stationImg": "./build/img/nash.jpg"
+  },
+  {
     "stationName": "FM Blues",
-    "URL": "http://strm112.1.fm/blues_mobile_aac",
+    "URL": "",
     "stationImg": "./build/img/blues.png"
   },
-
   {
     "stationName": "FM Blues",
     "URL": "http://strm112.1.fm/blues_mobile_aac",
     "stationImg": "./build/img/blues.png"
   },
-
   {
     "stationName": "FM Blues",
     "URL": "http://strm112.1.fm/blues_mobile_aac",
     "stationImg": "./build/img/blues.png"
   },
-
   {
     "stationName": "FM Blues",
     "URL": "http://strm112.1.fm/blues_mobile_aac",
     "stationImg": "./build/img/blues.png"
   },
-
   {
     "stationName": "FM Blues",
     "URL": "http://strm112.1.fm/blues_mobile_aac",
     "stationImg": "./build/img/blues.png"
   },
-
   {
     "stationName": "FM Blues",
     "URL": "http://strm112.1.fm/blues_mobile_aac",
     "stationImg": "./build/img/blues.png"
   },
-
-  {
-    "stationName": "FM Blues",
-    "URL": "http://strm112.1.fm/blues_mobile_aac",
-    "stationImg": "./build/img/blues.png"
-  },
-
   {
     "stationName": "FM Blues",
     "URL": "http://strm112.1.fm/blues_mobile_aac",
@@ -115,15 +113,6 @@
     "stationName": "FM Blues",
     "URL": "http://strm112.1.fm/blues_mobile_aac",
     "stationImg": "./build/img/blues.png"
-  },  {
-  "stationName": "FM Blues",
-  "URL": "http://strm112.1.fm/blues_mobile_aac",
-  "stationImg": "./build/img/blues.png"
-},
-  {
-    "stationName": "FM Blues",
-    "URL": "http://strm112.1.fm/blues_mobile_aac",
-    "stationImg": "./build/img/blues.png"
   },
   {
     "stationName": "FM Blues",
@@ -135,15 +124,6 @@
     "URL": "http://strm112.1.fm/blues_mobile_aac",
     "stationImg": "./build/img/blues.png"
   },
-  {
-    "stationName": "FM Blues",
-    "URL": "http://strm112.1.fm/blues_mobile_aac",
-    "stationImg": "./build/img/blues.png"
-  },  {
-  "stationName": "FM Blues",
-  "URL": "http://strm112.1.fm/blues_mobile_aac",
-  "stationImg": "./build/img/blues.png"
-},
   {
     "stationName": "FM Blues",
     "URL": "http://strm112.1.fm/blues_mobile_aac",
@@ -178,15 +158,22 @@
     "stationName": "FM Blues",
     "URL": "http://strm112.1.fm/blues_mobile_aac",
     "stationImg": "./build/img/blues.png"
-  },  {
-  "stationName": "FM Blues",
-  "URL": "http://strm112.1.fm/blues_mobile_aac",
-  "stationImg": "./build/img/blues.png"
-},  {
-  "stationName": "FM Blues",
-  "URL": "http://strm112.1.fm/blues_mobile_aac",
-  "stationImg": "./build/img/blues.png"
-},
+  },
+  {
+    "stationName": "FM Blues",
+    "URL": "http://strm112.1.fm/blues_mobile_aac",
+    "stationImg": "./build/img/blues.png"
+  },
+  {
+    "stationName": "FM Blues",
+    "URL": "http://strm112.1.fm/blues_mobile_aac",
+    "stationImg": "./build/img/blues.png"
+  },
+  {
+    "stationName": "FM Blues",
+    "URL": "http://strm112.1.fm/blues_mobile_aac",
+    "stationImg": "./build/img/blues.png"
+  },
   {
     "stationName": "FM Blues",
     "URL": "http://strm112.1.fm/blues_mobile_aac",
@@ -207,7 +194,6 @@
     "URL": "http://strm112.1.fm/blues_mobile_aac",
     "stationImg": "./build/img/blues.png"
   },
-
   {
     "stationName": "FM Blues",
     "URL": "http://strm112.1.fm/blues_mobile_aac",
@@ -218,13 +204,6 @@
     "URL": "http://strm112.1.fm/blues_mobile_aac",
     "stationImg": "./build/img/blues.png"
   },
-
-  {
-    "stationName": "FM Blues",
-    "URL": "http://strm112.1.fm/blues_mobile_aac",
-    "stationImg": "./build/img/blues.png"
-  },
-
   {
     "stationName": "FM Blues",
     "URL": "http://strm112.1.fm/blues_mobile_aac",
@@ -235,14 +214,6 @@
     "URL": "http://strm112.1.fm/blues_mobile_aac",
     "stationImg": "./build/img/blues.png"
   },
-
-
-  {
-    "stationName": "FM Blues",
-    "URL": "http://strm112.1.fm/blues_mobile_aac",
-    "stationImg": "./build/img/blues.png"
-  },
-
   {
     "stationName": "FM Blues",
     "URL": "http://strm112.1.fm/blues_mobile_aac",
@@ -253,7 +224,26 @@
     "URL": "http://strm112.1.fm/blues_mobile_aac",
     "stationImg": "./build/img/blues.png"
   },
-
+  {
+    "stationName": "FM Blues",
+    "URL": "http://strm112.1.fm/blues_mobile_aac",
+    "stationImg": "./build/img/blues.png"
+  },
+  {
+    "stationName": "FM Blues",
+    "URL": "http://strm112.1.fm/blues_mobile_aac",
+    "stationImg": "./build/img/blues.png"
+  },
+  {
+    "stationName": "FM Blues",
+    "URL": "http://strm112.1.fm/blues_mobile_aac",
+    "stationImg": "./build/img/blues.png"
+  },
+  {
+    "stationName": "FM Blues",
+    "URL": "http://strm112.1.fm/blues_mobile_aac",
+    "stationImg": "./build/img/blues.png"
+  },
   {
     "stationName": "FM Blues",
     "URL": "http://strm112.1.fm/blues_mobile_aac",

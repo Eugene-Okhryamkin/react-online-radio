@@ -2,6 +2,8 @@ const path = require("path");
 const htmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const autoprefixer = require("autoprefixer");
+const sass = require("node-sass");
 
 module.exports = {
     entry: "./src/index.jsx",
@@ -22,13 +24,20 @@ module.exports = {
                 test: /\.(sass|css)$/,
                 use: [
                     {
-                        loader: "style-loader" // creates style nodes from JS strings
+                        loader: "style-loader", // creates style nodes from JS strings
                     },
                     {
-                        loader: "css-loader" // translates CSS into CommonJS
+                        loader: "css-loader", // translates CSS into CommonJS
                     },
                     {
                         loader: "sass-loader", // compiles Sass to CSS
+                        options: {
+                            plugins: [
+                                autoprefixer({
+                                    browsers: ["ie >= 9", "last 4 versions"]
+                                })
+                            ]
+                        }
                     }
                 ]
             },
@@ -40,9 +49,10 @@ module.exports = {
             }
         ]
     },
+
     devServer: {
         hot: true,
         overlay: true,
-        port: 3100
+        port: 3000
     }
 };
