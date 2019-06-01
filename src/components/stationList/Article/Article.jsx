@@ -4,7 +4,7 @@ import "./article.sass";
 class Article extends  Component {
 
     state = {
-        played: false
+        nowPlaying: false
     };
 
     playStation = e => {
@@ -17,14 +17,14 @@ class Article extends  Component {
     };
 
     render() {
-        const { played } = this.state;
-        const { item: { stationName, stationImg } } = this.props;
+        const { nowPlaying } = this.state;
+        const { item: { stationName, stationImg }, played, update } = this.props;
         return (
-            <div className="stationItem" onClick={() => {this.props.played(played); this.props.update(this.props.item); }}>
+            <div className="stationItem" onClick={() => {played(nowPlaying); update(this.props.item); }}>
                 <div className="img">
                     <img src={ stationImg } alt={ stationName } />
                 </div>
-                <div className="overlay" onClick={this.playStation}> </div>
+                <div className="overlay" onClick={ this.playStation }> </div>
             </div>
         )
     };

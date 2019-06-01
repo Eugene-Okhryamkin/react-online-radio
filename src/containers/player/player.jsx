@@ -3,7 +3,7 @@ import "./player.sass";
 import Controls from "../../components/player-controls/player-controls.jsx"
 
 
-const Player = (props) => {
+const Player = props => {
     const { changedStation } = props;
 
     return(

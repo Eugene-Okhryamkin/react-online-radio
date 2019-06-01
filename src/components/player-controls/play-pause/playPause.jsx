@@ -5,24 +5,19 @@ import { faPauseCircle, faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 
 class PlayPause extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            play: false
-        };
-    }
+    state = {
+        play: false
+    };
 
     shouldComponentUpdate(nextProps) {
-        if(nextProps.update !== this.props.update) {
-            this.setState({play: true})
-        }
+        (nextProps.update !== this.props.update) ? this.setState({play: true}) : null;
         return true
     }
 
     playPause = () => {
       const { play } = this.state;
       const { music } = this.props;
-
+      
       if(!play) {
           this.setState({play: true});
           music.play();
@@ -42,7 +37,7 @@ class PlayPause extends Component {
         const { play } = this.state;
         return(
             <div className="playPause">
-                <a href="#" onClick={this.toogle}>
+                <a href="#" onClick={ this.toogle }>
                     {play && <FontAwesomeIcon icon={ faPauseCircle } />}
                     {!play && <FontAwesomeIcon icon={ faPlayCircle } />}
                 </a>

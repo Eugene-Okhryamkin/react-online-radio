@@ -23,32 +23,31 @@ class Controls extends Component {
             this.setState({
                 music: audio
             });
-
             audio.play();
-
         }
     }
 
     render() {
+        const { stationName, stationImg, stream } = this.props;
+        const { music } = this.state;
+
         return(
             <div className="player">
                 <div className="stationImg">
-                    <img src={this.props.stationImg} alt={this.props.stationName}/>
+                    <img src={ stationImg } alt={ stationName }/>
                 </div>
                 <div className="controls">
                     <div className="playPause-control__stationName">
-                        <PlayPause music={ this.state.music }  update={this.props.stream}/>
+                        <PlayPause music={ music }  update={ stream }/>
                         <div className="stationName">
-                            <p>{this.props.stationName}</p>
+                            <p>{ stationName }</p>
                         </div>
                     </div>
-                    <div className="volume__equalizerBtn">
-                        <VolumeMute music={ this.state.music }/>
+                    <div className="volume">
+                        <VolumeMute music={ music }/>
                     </div>
                 </div>
             </div>
-
-
         )
     }
 }

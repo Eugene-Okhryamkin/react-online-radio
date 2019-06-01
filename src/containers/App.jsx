@@ -15,15 +15,13 @@ class App extends Component {
         played: false
     };
 
-    updateData = (value) => this.setState({changed: value});
-    playing = (played) => this.setState({played: played});
+    updateData = value => this.setState({changed: value});
+    playing = played => this.setState({played: played});
 
     componentWillMount() {
         fetch(data)
             .then((response) => {
-                this.setState({
-                    isLoading: true
-                });
+                this.setState({ isLoading: true });
                 return response.json();
             })
             .then((response) => {
@@ -40,11 +38,11 @@ class App extends Component {
         const { stations, isLoading, changed } = this.state;
         return(
             <React.Fragment>
-                {isLoading && <Preloader />}
-                {!isLoading &&  <Player changedStation={changed} />}
-                {Array.isArray(stations) && <Stations data={stations} updateData={this.updateData} playing={this.playing}/>}
+                { isLoading ? <Preloader /> : <Player changedStation={changed} /> }
+                { Array.isArray(stations) && <Stations data={stations} updateData={this.updateData} playing={this.playing} /> }
             </React.Fragment>
         )
     }
 }
+
 export default App;

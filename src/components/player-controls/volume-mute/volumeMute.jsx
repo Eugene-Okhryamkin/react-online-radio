@@ -10,16 +10,15 @@ class VolumeMute extends Component {
           muted: true
       };
 
-    handleChangeVolume = (event, value) => {
-        const { volume } = this.state;
+    handleChangeVolume = e => {
         const { music } = this.props;
-        this.setState({volume: event.target.value});
+        this.setState({volume: e.target.value});
         music.volume = this.state.volume;
     };
 
     handleMuteAudio = e => {
         e.preventDefault();
-        const { muted, volume } = this.state;
+        const { muted } = this.state;
         const { music } = this.props;
         muted ? this.setState({muted: false}) : this.setState({muted: true});
         music.muted = muted;
@@ -31,7 +30,7 @@ class VolumeMute extends Component {
             <div className="volume">
                 <div className="volumeTrack">
                     <label>
-                        Громкость: {parseInt(volume * 100)} %
+                        Громкость: { parseInt(volume * 100) } %
                         <input
                             type="range"
                             max={1} min={0}
@@ -46,8 +45,7 @@ class VolumeMute extends Component {
                         href="#"
                         onClick={this.handleMuteAudio}
                     >
-                        {muted && <FontAwesomeIcon icon={volume == 0 ? faVolumeOff : (volume <= 0.5 ? faVolumeDown : faVolumeUp) } />}
-                        {!muted && <FontAwesomeIcon icon={faVolumeMute} />}
+                        {muted ? <FontAwesomeIcon icon={volume == 0 ? faVolumeOff : (volume <= 0.5 ? faVolumeDown : faVolumeUp) } /> : <FontAwesomeIcon icon={faVolumeMute} />}
                     </a>
                 </div>
             </div>
