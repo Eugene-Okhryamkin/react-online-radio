@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import * as PropTypes from "prop-types";
 import "./article.sass";
 
 class Article extends  Component {
@@ -28,6 +29,14 @@ class Article extends  Component {
             </div>
         )
     };
+};
+
+Article.propTypes = {
+    item: PropTypes.shape({
+        stationName: PropTypes.string.isRequired
+    }),
+    played: PropTypes.func.isRequired,
+    update: PropTypes.func
 };
 
 export default Article;

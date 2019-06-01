@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import * as PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./playPause.sass";
 import { faPauseCircle, faPlayCircle } from "@fortawesome/free-solid-svg-icons";
@@ -45,6 +46,10 @@ class PlayPause extends Component {
         )
     }
 }
+
+PlayPause.propTypes = {
+    update: PropTypes.string.isRequired
+};
 
 export default PlayPause;
 

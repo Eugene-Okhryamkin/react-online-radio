@@ -3,18 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d688096b-33ff-4ed4-a4e8-d56e9aab171c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/player-controls/play-pause/playPause.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/player-controls/play-pause/playPause.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/player-controls/player-controls.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/player-controls/player-controls.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/player-controls/player-controls.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/player-controls/player-controls.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/player-controls/volume-mute/volumeMute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/player-controls/volume-mute/volumeMute.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/player-controls/volume-mute/volumeMute.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/player-controls/volume-mute/volumeMute.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/stationList/Article/Article.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stationList/Article/Article.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/stationList/stationList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stationList/stationList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/player/player.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/player/player.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,19 +23,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/player/player.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+            <state relative-caret-position="357">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -49,10 +35,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/App.jsx">
+        <entry file="file://$PROJECT_DIR$/src/components/stationList/Article/Article.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="861">
-              <caret line="41" column="126" selection-start-line="41" selection-start-column="126" selection-end-line="41" selection-end-column="126" />
+            <state relative-caret-position="278">
+              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -61,13 +47,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/player-controls/volume-mute/volumeMute.jsx">
+        <entry file="file://$PROJECT_DIR$/src/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="47" column="175" selection-start-line="47" selection-start-column="175" selection-end-line="47" selection-end-column="175" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="21">
+              <caret line="1" column="33" lean-forward="true" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -106,13 +89,13 @@
         <option value="$PROJECT_DIR$/src/components/player-controls/player-controls.sass" />
         <option value="$PROJECT_DIR$/src/components/player-controls/volume-mute/volumeMute.sass" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/src/containers/player/player.jsx" />
-        <option value="$PROJECT_DIR$/src/components/stationList/Article/Article.jsx" />
-        <option value="$PROJECT_DIR$/src/components/player-controls/play-pause/playPause.jsx" />
-        <option value="$PROJECT_DIR$/src/components/stationList/stationList.jsx" />
-        <option value="$PROJECT_DIR$/src/components/player-controls/player-controls.jsx" />
         <option value="$PROJECT_DIR$/src/containers/App.jsx" />
         <option value="$PROJECT_DIR$/src/components/player-controls/volume-mute/volumeMute.jsx" />
+        <option value="$PROJECT_DIR$/src/containers/player/player.jsx" />
+        <option value="$PROJECT_DIR$/src/components/player-controls/player-controls.jsx" />
+        <option value="$PROJECT_DIR$/src/components/player-controls/play-pause/playPause.jsx" />
+        <option value="$PROJECT_DIR$/src/components/stationList/stationList.jsx" />
+        <option value="$PROJECT_DIR$/src/components/stationList/Article/Article.jsx" />
       </list>
     </option>
   </component>
@@ -137,55 +120,6 @@
               <item name="react-online-radio" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-online-radio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-online-radio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-online-radio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-online-radio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-online-radio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="player-controls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-online-radio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-online-radio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="player-controls" type="462c0819:PsiDirectoryNode" />
-              <item name="volume-mute" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-online-radio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-online-radio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="stationList" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-online-radio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-online-radio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="stationList" type="462c0819:PsiDirectoryNode" />
-              <item name="Article" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-online-radio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-online-radio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-online-radio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-online-radio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="player" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -260,18 +194,18 @@
       <workItem from="1559283906153" duration="99000" />
       <workItem from="1559284026224" duration="2922000" />
       <workItem from="1559325314541" duration="862000" />
-      <workItem from="1559415608120" duration="1372000" />
+      <workItem from="1559415608120" duration="4160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90304000" />
+    <option name="totallyTimeSpent" value="93092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="859" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.118429385" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14692843" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -368,20 +302,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-457">
-          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="33" lean-forward="true" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/App.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -420,16 +340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/preloader/preloader.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/stationList/stationList.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -451,67 +361,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-394">
+          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
+        <state relative-caret-position="1155">
           <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/player/player.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/player-controls/play-pause/playPause.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <marker date="1559416318292" expanded="true" signature="506:507" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/stationList/Article/Article.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="24" column="66" lean-forward="true" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/stationList/stationList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/player-controls/player-controls.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
+        <state relative-caret-position="194">
           <caret line="41" column="126" selection-start-line="41" selection-start-column="126" selection-end-line="41" selection-end-column="126" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -519,13 +385,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/player-controls/play-pause/playPause.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <marker date="1559419193237" expanded="true" signature="547:548" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/player-controls/volume-mute/volumeMute.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="341">
           <caret line="47" column="175" selection-start-line="47" selection-start-column="175" selection-end-line="47" selection-end-column="175" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/player-controls/player-controls.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/preloader/preloader.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/stationList/stationList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="32" column="30" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/player/player.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/stationList/Article/Article.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="33" lean-forward="true" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
         </state>
       </provider>
     </entry>

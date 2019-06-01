@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import * as PropTypes from "prop-types";
 import PlayPause from "./play-pause/playPause.jsx";
 import VolumeMute from "./volume-mute/volumeMute.jsx";
 import "./player-controls.sass";
@@ -51,5 +52,10 @@ class Controls extends Component {
         )
     }
 }
+
+Controls.propTypes = {
+    stream: PropTypes.string.isRequired,
+    stationName: PropTypes.string.isRequired
+};
 
 export default Controls;

@@ -1,4 +1,5 @@
 import React from "react";
+import * as PropTypes from "prop-types";
 import Article from "./Article/Article.jsx";
 import "./stationList.sass";
 
@@ -26,6 +27,10 @@ const Stations = (props) => {
     );
 };
 
-
+Stations.propTypes = {
+    data: PropTypes.array.isRequired,
+    playing: PropTypes.func.isRequired,
+    updateDate: PropTypes.func
+};
 
 export default Stations;

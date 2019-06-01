@@ -1,4 +1,5 @@
 import React from "react";
+import * as PropTypes from "prop-types";
 import "./player.sass";
 import Controls from "../../components/player-controls/player-controls.jsx"
 
@@ -15,6 +16,13 @@ const Player = props => {
             />
         </div>
     )
+};
+
+Player.propTypes = {
+    changedStation: PropTypes.shape({
+        URL: PropTypes.string.isRequired,
+        stationName: PropTypes.string.isRequired
+    })
 };
 
 export default Player;
