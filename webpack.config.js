@@ -1,7 +1,4 @@
 const path = require("path");
-const htmlWebpackPlugin = require("html-webpack-plugin");
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require("autoprefixer");
 const sass = require("node-sass");
 
@@ -24,27 +21,24 @@ module.exports = {
                 test: /\.(sass|css)$/,
                 use: [
                     {
-                        loader: "style-loader", // creates style nodes from JS strings
+                        loader: "style-loader" // creates style nodes from JS strings
                     },
                     {
-                        loader: "css-loader", // translates CSS into CommonJS
+                        loader: "css-loader" // translates CSS into CommonJS
                     },
                     {
-                        loader: "sass-loader", // compiles Sass to CSS
+                        loader: "postcss-loader",
                         options: {
                             plugins: [
                                 autoprefixer({
-                                    browsers: ["ie >= 9", "last 4 versions"]
+                                    browsers: ["ie >= 10", "last 4 versions"]
                                 })
                             ]
                         }
+                    },
+                    {
+                        loader: "sass-loader" // compiles Sass to CSS
                     }
-                ]
-            },
-            {
-                test: /\.(png|svg|jpg|gif)$/,
-                use: [
-                    'file-loader'
                 ]
             }
         ]
@@ -53,6 +47,6 @@ module.exports = {
     devServer: {
         hot: true,
         overlay: true,
-        port: 2000
+        port: 2500
     }
 };
